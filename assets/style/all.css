@@ -61,7 +61,10 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 24px; }
+  font-size: 24px;
+  line-height: 1.75;
+  font-weight: 700;
+  font-style: italic; }
 
 a {
   text-decoration: none;
@@ -106,140 +109,125 @@ a {
 .mb12 {
   margin-bottom: 48px; }
 
+.pt14 {
+  padding-top: 56px; }
+
 .mb14 {
   margin-bottom: 56px; }
+
+.pb14 {
+  padding-bottom: 56px; }
+
+.pt16 {
+  padding-top: 64px; }
+
+.pb16 {
+  padding-bottom: 64px; }
 
 .mb17 {
   margin-bottom: 68px; }
 
-.bannerFullPage {
-  height: 960px;
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-style: italic;
-  font-weight: 700;
+.pb36 {
+  padding-bottom: 144px; }
+
+.pb40 {
+  padding-bottom: 160px; }
+
+.d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; }
+
+.f-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.fd-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.jc-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: center; }
+
+.jc-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.ai-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .bannerFullPage .header {
-    color: #FFF; }
-    .bannerFullPage .header .notice {
-      line-height: 42px; }
-    .bannerFullPage .header .title {
-      font-size: 80px;
-      line-height: 106px; }
-    .bannerFullPage .header .founder {
-      font-size: 24px;
-      line-height: 36px; }
-    .bannerFullPage .header .socialMedia {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
 
-.container {
-  text-align: center;
-  font-weight: 700;
-  font-style: italic; }
-  .container .about {
-    width: 412px;
-    margin: 0 auto;
-    text-align: center; }
-    .container .about .subTitle {
-      font-size: 64px;
-      line-height: 84px; }
-    .container .about .profile {
-      font-size: 24px;
-      line-height: 42px;
-      border-bottom: 1px solid #000;
-      padding-bottom: 24px; }
-      .container .about .profile .university {
-        font-size: 22px;
-        line-height: 36px; }
-    .container .about .experience {
-      line-height: 42px; }
-      .container .about .experience li {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .container .about .experience li div {
-          width: 22px;
-          height: 22px;
-          background: #891818;
-          border-radius: 50%;
-          margin-right: 16px; }
+.h-960px {
+  height: 960px; }
 
-.fullPage {
-  text-align: center;
-  background-color: #000;
-  color: #FFF;
-  padding-top: 56px;
-  padding-bottom: 160px;
-  font-weight: 700;
-  font-style: italic; }
-  .fullPage .myBrand {
-    text-align: center; }
-    .fullPage .myBrand .subTitle {
-      font-size: 64px;
-      line-height: 84px; }
-    .fullPage .myBrand .englishSlogan {
-      line-height: 42px; }
-    .fullPage .myBrand .chineseSlogan {
-      font-size: 20px;
-      line-height: 30px; }
-    .fullPage .myBrand .brand {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+.w-384px {
+  width: 384px; }
 
-.otherWorks {
-  text-align: center;
-  padding-top: 56px;
-  padding-bottom: 144px;
-  text-align: center;
-  font-weight: 700;
-  font-style: italic; }
-  .otherWorks .subTitle {
-    font-size: 64px;
-    line-height: 84px; }
-  .otherWorks .container {
-    max-width: 1200px;
-    margin: 0 auto; }
-    .otherWorks .container .otherWorksText {
-      font-size: 20px;
-      line-height: 30px; }
-    .otherWorks .container .work {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-      .otherWorks .container .work li p {
-        line-height: 42px;
-        margin-top: 16px; }
+.mw-1200px {
+  max-width: 1200px; }
+
+.m-0-auto {
+  margin: 0 auto; }
+
+.bg-cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-color-black {
+  background-color: #000; }
+
+.text-align-center {
+  text-align: center; }
+
+.text-align-left {
+  text-align: left; }
+
+.ft-color-white {
+  color: white; }
+
+.fs-title {
+  font-size: 80px;
+  line-height: 106px; }
+
+.fs-subTitle {
+  font-size: 64px;
+  line-height: 84px; }
+
+.fs-24px-lh-36px {
+  font-size: 24px;
+  line-height: 36px; }
+
+.fs-20px-lh-30px {
+  font-size: 20px;
+  line-height: 30px; }
+
+.bb-1px-solid-black {
+  border-bottom: 1px solid #000; }
+
+.bg-color-891818 {
+  background: #891818; }
+
+.w-22px {
+  width: 22px; }
+
+.h-22px {
+  height: 22px; }
+
+.br-50percent {
+  border-radius: 50%; }
+
+.bg-img-banner {
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png"); }
+
+.about .custom-line {
+  margin: 0 auto 24px; }
 
 .footerFullPage {
   font-weight: 700;
