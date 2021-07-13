@@ -1,168 +1,72 @@
 @import 'reset';
+@import 'position';
+@import 'rwd';
+@import 'text';
+@import 'display';
+@import 'squeeze';
+@import 'customized';
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  line-height: 1.75;
+  @include font_size_and_line_height(24px, 1.75);
   font-weight: 700;
   font-style: italic;
+  font-family: "Roboto", sans-serif;
 }
+
+.title {
+  @include font_size_and_line_height(80px, 106px);
+}
+.subTitle {
+  @include font_size_and_line_height(64px, 84px);
+}
+
+.text {
+  @include font_size_and_line_height(24px, 36px);
+}
+
+.txt {
+  @include font_size_and_line_height(20px, 1.5);
+}
+
+.container {
+  @include max_width(1200px);
+}
+
 a {
   text-decoration: none;
   color: #FFF;
   &:hover {
+    color: #000;
     background: #FFF;
-    color: #000
   }
 }
-.mb1 {
-  margin-bottom: 4px;
-}
-.mb2 {
-  margin-bottom: 8px;
-}
-.mb3 {
-  margin-bottom: 12px;
-}
-.mb4 {
-  margin-bottom: 16px;
-}
-.mr4 {
-  margin-right: 16px;
-}
-.mb5 {
-  margin-bottom: 20px;
-}
-.mb6 {
-  margin-bottom: 24px;
-}
-.mr6 {
-  margin-right: 24px;
-}
-.mb7 {
-  margin-bottom: 28px;
-}
-.mb8 {
-  margin-bottom: 32px;
-}
-.mb10 {
-  margin-bottom: 40px;
-}
-.mb12 {
-  margin-bottom: 48px;
-}
-.pt14 {
-  padding-top: 56px;
-}
-.mb14 {
-  margin-bottom: 56px;
-}
-.pb14 {
-  padding-bottom: 56px;
-}
-.pt16 {
- padding-top: 64px;
-}
-.pb16 {
-  padding-bottom: 64px;
-}
-.mb17 {
-  margin-bottom: 68px;
-}
-.pb36 {
-  padding-bottom: 144px;
-}
-.pb40 {
-  padding-bottom: 160px;
+
+.full_banner_page {
+  color: #FFF;
+  @include height(960px);
+  @include background_image("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png");
 }
 
-.d-flex {
-  display: flex;
-}
-.f-wrap {
-  flex-wrap: wrap;
-}
-.fd-column {
-  flex-direction: column;
-}
-.jc-center {
-  justify-content: center;
-}
-.jc-space-between {
-  justify-content: space-between;
-}
-.ai-center {
-  align-items: center;
-}
-.h-960px {
-  height: 960px;
-}
-.w-384px {
-  width: 384px;
-}
-.mw-1200px {
-  max-width: 1200px;
-}
-.m-0-auto {
-  margin: 0 auto;
-}
-.bg-cover {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg-color-black {
-  background-color: #000;
-}
-.text-align-center {
-  text-align: center;
-}
-.text-align-left {
-  text-align: left;
-}
-.ft-color-white {
-  color: white;
-}
-.fs-title {
-  font-size: 80px;
-  line-height: 106px;
-}
-.fs-subTitle {
-  font-size: 64px;
-  line-height: 84px;
-}
-.fs-24px-lh-36px {
-  font-size: 24px;
-  line-height: 36px;
-}
-.fs-20px-lh-30px {
-  font-size: 20px;
-  line-height: 30px;
-}
-.bb-1px-solid-black {
-  border-bottom: 1px solid #000;
-}
-.bg-color-891818 {
-  background: #891818;
-}
-.w-22px {
-  width: 22px;
-}
-.h-22px {
-  height: 22px;
-}
-.br-50percent {
-  border-radius: 50%;
-}
-
-// header
-.bg-img-banner {
-  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png");
-}
-
-// About
 .about {
-  .custom-line {
-    margin: 0 auto 24px ;
+  .custom_line {
+    max-width: 384px;
+    border-bottom: 1px solid #000;
+  }
+  .custom_point {
+    width: 22px;
+    height: 22px;
+    background: #891818;
+    border-radius: 50%;
   }
 }
+
+.myBrand {
+  background: #000;
+  color: #FFF;
+}
+
+.contact {
+  background: #000;
+  color: #FFF;
+}
+
