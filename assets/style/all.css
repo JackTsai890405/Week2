@@ -65,9 +65,6 @@ img {
 .position_relative {
   position: relative; }
 
-.text_decoration_none {
-  text-decoration: none; }
-
 .font_style_italic {
   font-style: italic; }
 
@@ -125,7 +122,7 @@ img {
       -ms-flex-align: center;
           align-items: center; }
 
-.margin-left_auto {
+.margin_left_auto {
   margin-left: auto; }
 
 .margin_right_auto {
@@ -249,10 +246,23 @@ a {
   color: #FFF;
   height: 960px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png"); }
+  .full_banner_page span {
+    font-size: 24px;
+    line-height: 1.75; }
 
 .about .custom_line {
-  max-width: 384px;
+  width: 85%;
   border-bottom: 1px solid #000; }
+
+.about p::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
+  background-color: #891818;
+  border-radius: 50%;
+  vertical-align: middle; }
 
 .about .custom_point {
   width: 22px;
