@@ -45,12 +45,27 @@ a {
   color: #FFF;
   @include height(960px);
   @include background_image("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png");
+  span {
+
+    @include font_size_and_line_height(24px, 1.75);
+  }
 }
 
 .about {
   .custom_line {
-    max-width: 384px;
+    // max-width: 384px;
+    width: 85%;
     border-bottom: 1px solid #000;
+  }
+  p::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+    background-color: #891818;
+    border-radius: 50%;
+    vertical-align: middle;
   }
   .custom_point {
     width: 22px;
